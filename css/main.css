@@ -949,3 +949,112 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--space-5) var(--space-3);
   }
 }
+
+
+/* ===== SECTION SHARED PATTERNS ===== */
+
+.section-header {
+  margin-bottom: var(--space-7);
+}
+
+[dir="rtl"] .section-header { text-align: right; }
+[dir="ltr"] .section-header { text-align: left; }
+
+.section-header h2 {
+  font-size: clamp(var(--text-xl), 3vw, var(--text-3xl));
+  font-weight: 700;
+  color: var(--navy);
+  margin-top: var(--space-2);
+}
+
+.section-footer {
+  margin-top: var(--space-7);
+}
+
+[dir="rtl"] .section-footer { text-align: right; }
+[dir="ltr"] .section-footer { text-align: left; }
+
+.link-more {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--gold);
+  transition: color var(--ease), gap var(--ease);
+}
+
+.link-more:hover {
+  color: var(--navy);
+  gap: var(--space-3);
+}
+
+.link-more__arrow {
+  font-style: normal;
+  line-height: 1;
+}
+
+
+/* ===== SERVICES PREVIEW ===== */
+
+.services-preview {
+  background: var(--paper);
+}
+
+.services-preview__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+}
+
+.svc-card {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-top: 3px solid var(--gold);
+  border-radius: 0 0 6px 6px;
+  padding: var(--space-6) var(--space-5);
+  transition: box-shadow var(--ease), transform var(--ease);
+}
+
+.svc-card:hover {
+  box-shadow: 0 4px 20px rgba(20, 35, 63, 0.08);
+  transform: translateY(-2px);
+}
+
+.svc-card__icon {
+  width: 40px;
+  height: 40px;
+  color: var(--navy);
+  margin-bottom: var(--space-4);
+}
+
+.svc-card__icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.svc-card__name {
+  font-size: var(--text-md);
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: var(--space-3);
+  line-height: 1.3;
+}
+
+.svc-card__desc {
+  font-size: var(--text-sm);
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+@media (max-width: 900px) {
+  .services-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .services-preview__grid {
+    grid-template-columns: 1fr;
+  }
+}
