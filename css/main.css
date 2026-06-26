@@ -1066,7 +1066,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .svc-card__desc {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--muted);
   line-height: 1.7;
 }
@@ -1245,7 +1245,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about-teaser__vision p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--ink);
   line-height: 1.8;
 }
@@ -1452,10 +1452,6 @@ h1, h2, h3, h4, h5, h6 {
   .exec-row__name {
     font-size: var(--text-lg);
   }
-
-  .exec-row__desc {
-    font-size: var(--text-sm);
-  }
 }
 
 @media (max-width: 767px) {
@@ -1485,7 +1481,6 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .exec-row__desc {
-    font-size: var(--text-sm);
     max-width: 100%;
   }
 }
@@ -1920,7 +1915,7 @@ h1, h2, h3, h4, h5, h6 {
 .value-card:nth-child(4) .value-card__name { color: var(--navy); }
 
 .value-card__desc {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   line-height: 1.85;
 }
 
@@ -1984,7 +1979,7 @@ h1, h2, h3, h4, h5, h6 {
 .compliance-note { border-inline-start: 4px solid var(--navy); }
 
 .compliance-note p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--muted);
   line-height: 1.8;
   margin: 0;
@@ -2060,7 +2055,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: var(--space-2);
   padding-bottom: var(--space-2);
   border-bottom: 1px solid var(--line);
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
   color: var(--muted);
   line-height: 1.7;
 }
@@ -2150,7 +2145,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .value-card__desc {
-    font-size: var(--text-xs);
+    font-size: var(--text-sm);
   }
 
   .strengths-section {
