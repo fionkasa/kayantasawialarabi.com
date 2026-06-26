@@ -270,6 +270,21 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+/* ===== FOCUS STYLES ===== */
+
+/* Keyboard focus ring — visible only for keyboard navigation, not mouse clicks */
+:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Remove outline for mouse users */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+
 /* ===== ANIMATIONS ===== */
 
 @keyframes fadeSlideUp {
@@ -458,9 +473,17 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--navy);
 }
 
-/* Hamburger checkbox — hidden visually, controls mobile menu */
+/* Hamburger checkbox — visually hidden but kept in tab order for keyboard access */
 .nav-toggle__input {
-  display: none;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .nav-toggle__btn {
@@ -481,6 +504,13 @@ h1, h2, h3, h4, h5, h6 {
   background: var(--paper);
   border-radius: 2px;
   transition: transform var(--ease), opacity var(--ease);
+}
+
+/* Show focus ring on the visible label when the hidden checkbox is focused */
+.nav-toggle__input:focus-visible ~ .nav-toggle__btn {
+  outline: 2px solid var(--gold);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 /* Hamburger → X animation when open */
