@@ -1294,3 +1294,181 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
   }
 }
+
+
+/* ===== PAGE HEADER (inner pages) ===== */
+
+.page-header {
+  background: var(--navy);
+  padding-block: var(--space-8);
+  border-bottom: 3px solid var(--gold);
+}
+
+.page-header__title {
+  font-size: clamp(var(--text-2xl), 4vw, var(--text-3xl));
+  font-weight: 700;
+  color: var(--paper);
+  margin-bottom: var(--space-2);
+  line-height: 1.2;
+}
+
+.page-header__sub {
+  font-size: var(--text-base);
+  color: #8b97ad;
+  line-height: 1.6;
+}
+
+
+/* ===== PRIMARY SERVICES (services page) ===== */
+
+.primary-services {
+  background: var(--paper);
+}
+
+/* Reuses .services-preview__grid and .svc-card — no new rules needed */
+/* Override grid to allow 3 cols wrapping to 2 then 1 */
+.primary-services .services-preview__grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .primary-services .services-preview__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 540px) {
+  .primary-services .services-preview__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* ===== EXEC SERVICES + PHOTO ROWS ===== */
+
+.exec-services {
+  background: var(--bg);
+  padding-bottom: 0;
+}
+
+.exec-services .section-header {
+  padding-inline: var(--container-pad);
+  max-width: var(--container-max);
+  margin-inline: auto;
+}
+
+/* Full-width photo row */
+.photo-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 340px;
+  margin-bottom: var(--space-3);
+  overflow: hidden;
+}
+
+[dir="rtl"] .photo-row { flex-direction: row-reverse; }
+[dir="ltr"] .photo-row { flex-direction: row; }
+
+/* Plain gold side bar — no flag, no pin */
+.side-bar {
+  flex: 0 0 70px;
+  background: var(--gold);
+  align-self: stretch;
+}
+
+/* Photo area */
+.photo-wrap {
+  flex: 1 1 0;
+  position: relative;
+  overflow: hidden;
+  background: var(--navy-deep);
+}
+
+.photo-wrap__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.photo-row:hover .photo-wrap__img {
+  transform: scale(1.03);
+}
+
+/* Label overlay — dark gradient, text at the bottom */
+.photo-label {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    transparent 30%,
+    rgba(15, 27, 48, 0.6) 60%,
+    rgba(15, 27, 48, 0.93) 100%
+  );
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: var(--space-6) var(--space-7);
+}
+
+[dir="rtl"] .photo-label { text-align: right; }
+[dir="ltr"] .photo-label { text-align: left; }
+
+.photo-label__name {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--paper);
+  line-height: 1.3;
+  margin-bottom: var(--space-2);
+}
+
+.photo-label__desc {
+  font-size: var(--text-sm);
+  color: #cdd5e3;
+  line-height: 1.7;
+  max-width: 72ch;
+}
+
+/* ===== PHOTO ROWS RESPONSIVE ===== */
+
+@media (max-width: 767px) {
+  .photo-row {
+    flex-direction: column;
+    min-height: 0;
+  }
+
+  [dir="rtl"] .photo-row,
+  [dir="ltr"] .photo-row {
+    flex-direction: column;
+  }
+
+  /* Gold bar collapses to a thin top strip on mobile */
+  .side-bar {
+    flex: 0 0 6px;
+    width: 100%;
+  }
+
+  .photo-wrap {
+    min-height: 260px;
+  }
+
+  .photo-label {
+    padding: var(--space-4) var(--space-4);
+  }
+
+  .photo-label__name {
+    font-size: var(--text-lg);
+  }
+
+  .photo-label__desc {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .photo-wrap {
+    min-height: 220px;
+  }
+}
