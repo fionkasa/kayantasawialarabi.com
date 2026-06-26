@@ -13,9 +13,19 @@
 <header class="navbar" role="banner">
   <div class="container navbar__inner">
 
-    <a href="index.html" class="navbar__logo" aria-label="كيان تساوي العربي — الرئيسية">
-      <img src="images/logo.svg" alt="كيان تساوي العربي" width="127" height="101" loading="eager">
+    <a href="index.html" class="navbar__brand" aria-label="كيان تساوي العربي — الرئيسية">
+      <div class="navbar__brand-logo-wrap">
+        <img src="images/logo-mark.svg" alt="" width="52" height="52" loading="eager" class="navbar__brand-logo">
+      </div>
+      <span class="navbar__brand-name">
+        <span class="ar">كيان تساوي العربي</span>
+        <span class="en">Kayan Tasawi Al Arabi</span>
+      </span>
     </a>
+
+    <div class="navbar__actions">
+      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
+    </div>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true">
     <label for="nav-toggle" class="nav-toggle__btn" aria-label="القائمة">
@@ -30,14 +40,8 @@
         <li><a href="projects.html" aria-current="page"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
         <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
         <li><a href="about.html"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
+        <li class="navbar__link-cta"><a href="contact.html"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></a></li>
       </ul>
-      <div class="navbar__actions">
-        <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
-        <a href="contact.html" class="btn-cta">
-          <span class="ar">تواصل معنا</span>
-          <span class="en">Contact Us</span>
-        </a>
-      </div>
     </nav>
 
   </div>
@@ -56,10 +60,6 @@
         <span class="ar">مشاريعنا</span>
         <span class="en">Our Projects</span>
       </h1>
-      <p class="page-header__sub">
-        <span class="ar">مشاريع متميزة في المملكة العربية السعودية ومصر والمغرب</span>
-        <span class="en">Distinguished projects across Saudi Arabia, Egypt, and Morocco</span>
-      </p>
     </div>
   </section>
   <!-- ===== END PAGE HEADER ===== -->
@@ -68,26 +68,24 @@
   <div class="container">
 
     <!-- Saudi Arabia -->
-    <section class="country-section" aria-label="مشاريع المملكة العربية السعودية">
+    <section id="saudi-arabia" class="country-section" aria-label="مشاريع المملكة العربية السعودية">
       <div class="country-section__heading">
         <h2 class="country-section__title">
+          <img src="images/flags/sa.svg" alt="Saudi Arabia" width="28" height="28" loading="lazy" class="country-flag">
           <span class="ar">المملكة العربية السعودية</span>
           <span class="en">Saudi Arabia</span>
         </h2>
       </div>
+      <p class="country-section__intro">
+        <span class="ar">تخطيط البنية التحتية / تطوير المخططات السكنية / إدارة المشاريع والعقود</span>
+        <span class="en">Infrastructure planning / Residential subdivision development / Project and contract management</span>
+      </p>
 
-      <!-- Abyat Al Khobar -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/sa.svg" alt="Saudi Arabia" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/abyat-al-khobar.jpg" alt="أبيات الخبر" width="1200" height="680" loading="lazy">
+      <div class="photo-grid">
+
+        <!-- Abyat Al Khobar — full-width row, natural proportions -->
+        <div class="photo-card photo-card--wide">
+          <img class="photo-card__img" src="images/projects/abyat-al-khobar.jpg" alt="أبيات الخبر" width="1060" height="390" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">أبيات الخبر</span>
@@ -95,20 +93,12 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Heart of Khobar -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/sa.svg" alt="Saudi Arabia" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/heart-of-khobar.jpg" alt="مشروع مجمع قلب الخبر" width="1200" height="680" loading="lazy">
+        <hr class="photo-separator" aria-hidden="true">
+
+        <!-- Heart of Khobar -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/heart-of-khobar.jpg" alt="مشروع مجمع قلب الخبر" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">مشروع مجمع قلب الخبر</span>
@@ -116,20 +106,10 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Baghlif Riyadh -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/sa.svg" alt="Saudi Arabia" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/baghlif-riyadh.jpg" alt="مشروع بغلف الرياض" width="1200" height="680" loading="lazy">
+        <!-- Baghlif Riyadh -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/baghlif-riyadh.jpg" alt="مشروع بغلف الرياض" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">مشروع بغلف – الرياض</span>
@@ -137,20 +117,12 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Aziziyah -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/sa.svg" alt="Saudi Arabia" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/aziziyah.jpg" alt="مشاريع العزيزية" width="1200" height="680" loading="lazy">
+        <hr class="photo-separator" aria-hidden="true">
+
+        <!-- Aziziyah -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/aziziyah.jpg" alt="مشاريع العزيزية" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">مشاريع العزيزية</span>
@@ -158,20 +130,10 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Al Orouba Dammam -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/sa.svg" alt="Saudi Arabia" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/al-orouba-dammam.jpg" alt="العروبة الدمام" width="1200" height="680" loading="lazy">
+        <!-- Al Orouba Dammam -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/al-orouba-dammam.jpg" alt="العروبة الدمام" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">العروبة – الدمام</span>
@@ -179,30 +141,29 @@
             </p>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- Egypt -->
-    <section class="country-section" aria-label="مشاريع مصر">
+    <section id="egypt" class="country-section" aria-label="مشاريع مصر">
       <div class="country-section__heading">
         <h2 class="country-section__title">
+          <img src="images/flags/eg.svg" alt="Egypt" width="28" height="28" loading="lazy" class="country-flag">
           <span class="ar">مصر</span>
           <span class="en">Egypt</span>
         </h2>
       </div>
+      <p class="country-section__intro">
+        <span class="ar">تنفيذ مشاريع سكنية وتشطيبات / تطوير المباني</span>
+        <span class="en">Residential construction and finishing works / Building development</span>
+      </p>
 
-      <!-- Alamein Towers -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/eg.svg" alt="Egypt" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/alamein-towers.jpg" alt="أبراج العالمين" width="1200" height="680" loading="lazy">
+      <div class="photo-grid">
+
+        <!-- Alamein Towers -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/alamein-towers.jpg" alt="أبراج العالمين" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">أبراج العالمين</span>
@@ -210,20 +171,10 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Sheikh Zayed -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/eg.svg" alt="Egypt" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/sheikh-zayed.jpg" alt="مشروعات الشيخ زايد" width="1200" height="680" loading="lazy">
+        <!-- Sheikh Zayed -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/sheikh-zayed.jpg" alt="مشروعات الشيخ زايد" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">مشروعات الشيخ زايد</span>
@@ -231,30 +182,29 @@
             </p>
           </div>
         </div>
+
       </div>
     </section>
 
     <!-- Morocco -->
-    <section class="country-section" aria-label="مشاريع المغرب">
+    <section id="morocco" class="country-section" aria-label="مشاريع المغرب">
       <div class="country-section__heading">
         <h2 class="country-section__title">
+          <img src="images/flags/ma.svg" alt="Morocco" width="28" height="28" loading="lazy" class="country-flag">
           <span class="ar">المغرب</span>
           <span class="en">Morocco</span>
         </h2>
       </div>
+      <p class="country-section__intro">
+        <span class="ar">أعمال خدمات البنية التحتية</span>
+        <span class="en">Infrastructure services works</span>
+      </p>
 
-      <!-- Eco City Agadir — masterplan -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/ma.svg" alt="Morocco" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/eco-city-agadir-1.jpg" alt="إيكو سيتي أكادير" width="1200" height="680" loading="lazy">
+      <div class="photo-grid">
+
+        <!-- Eco City Agadir — masterplan -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/eco-city-agadir-1.jpg" alt="إيكو سيتي أكادير" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">إيكو سيتي أكادير</span>
@@ -262,20 +212,10 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Eco City Agadir — site photo 2 -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/ma.svg" alt="Morocco" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/eco-city-agadir-2.jpg" alt="إيكو سيتي أكادير" width="1200" height="680" loading="lazy">
+        <!-- Eco City Agadir — site photo 2 -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/eco-city-agadir-2.jpg" alt="إيكو سيتي أكادير" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">إيكو سيتي أكادير</span>
@@ -283,20 +223,12 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Eco City Agadir — site photo 3 -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/ma.svg" alt="Morocco" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/eco-city-agadir-3.jpg" alt="إيكو سيتي أكادير" width="1200" height="680" loading="lazy">
+        <hr class="photo-separator" aria-hidden="true">
+
+        <!-- Eco City Agadir — site photo 3 -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/eco-city-agadir-3.jpg" alt="إيكو سيتي أكادير" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">إيكو سيتي أكادير</span>
@@ -304,20 +236,10 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Eco City Agadir — site photo 4 -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/ma.svg" alt="Morocco" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/eco-city-agadir-4.jpg" alt="إيكو سيتي أكادير" width="1200" height="680" loading="lazy">
+        <!-- Eco City Agadir — site photo 4 -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/eco-city-agadir-4.jpg" alt="إيكو سيتي أكادير" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">إيكو سيتي أكادير</span>
@@ -325,20 +247,12 @@
             </p>
           </div>
         </div>
-      </div>
 
-      <!-- Eco City Agadir — site photo 5 -->
-      <div class="photo-row">
-        <div class="side-bar side-bar--pin">
-          <div class="flag-pin">
-            <div class="flag-pin__head">
-              <img src="images/flags/ma.svg" alt="Morocco" width="48" height="48" loading="lazy">
-            </div>
-            <div class="flag-pin__tail"></div>
-          </div>
-        </div>
-        <div class="photo-wrap">
-          <img class="photo-wrap__img" src="images/projects/eco-city-agadir-5.jpg" alt="إيكو سيتي أكادير" width="1200" height="680" loading="lazy">
+        <hr class="photo-separator" aria-hidden="true">
+
+        <!-- Eco City Agadir — site photo 5 -->
+        <div class="photo-card">
+          <img class="photo-card__img" src="images/projects/eco-city-agadir-5.jpg" alt="إيكو سيتي أكادير" width="800" height="600" loading="lazy">
           <div class="photo-label">
             <p class="photo-label__name">
               <span class="ar">إيكو سيتي أكادير</span>
@@ -346,6 +260,7 @@
             </p>
           </div>
         </div>
+
       </div>
     </section>
 
@@ -362,7 +277,7 @@
 
     <div class="footer__top">
       <a href="index.html" class="footer__logo" aria-label="كيان تساوي العربي — الرئيسية">
-        <img src="images/logo.svg" alt="كيان تساوي العربي" width="110" height="87" loading="lazy">
+        <img src="images/logo-mark.svg" alt="كيان تساوي العربي" width="56" height="56" loading="lazy">
       </a>
 
       <nav class="footer__nav" aria-label="روابط التذييل">

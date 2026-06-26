@@ -13,9 +13,19 @@
 <header class="navbar" role="banner">
   <div class="container navbar__inner">
 
-    <a href="index.html" class="navbar__logo" aria-label="كيان تساوي العربي — الرئيسية">
-      <img src="images/logo.svg" alt="كيان تساوي العربي" width="127" height="101" loading="eager">
+    <a href="index.html" class="navbar__brand" aria-label="كيان تساوي العربي — الرئيسية">
+      <div class="navbar__brand-logo-wrap">
+        <img src="images/logo-mark.svg" alt="" width="52" height="52" loading="eager" class="navbar__brand-logo">
+      </div>
+      <span class="navbar__brand-name">
+        <span class="ar">كيان تساوي العربي</span>
+        <span class="en">Kayan Tasawi Al Arabi</span>
+      </span>
     </a>
+
+    <div class="navbar__actions">
+      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
+    </div>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true">
     <label for="nav-toggle" class="nav-toggle__btn" aria-label="القائمة">
@@ -30,14 +40,8 @@
         <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
         <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
         <li><a href="about.html"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
+        <li class="navbar__link-cta"><a href="contact.html"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></a></li>
       </ul>
-      <div class="navbar__actions">
-        <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
-        <a href="contact.html" class="btn-cta">
-          <span class="ar">تواصل معنا</span>
-          <span class="en">Contact Us</span>
-        </a>
-      </div>
     </nav>
 
   </div>
@@ -76,40 +80,7 @@
         </div>
       </div>
       <div class="hero__art" aria-hidden="true">
-        <svg viewBox="0 0 80 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <!-- Buildings silhouette -->
-          <rect x="4"  y="30" width="18" height="70" fill="none" stroke="#C9A227" stroke-width="1.5"/>
-          <rect x="8"  y="38" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="14" y="38" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="8"  y="48" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="14" y="48" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="8"  y="58" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="14" y="58" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-
-          <rect x="26" y="12" width="22" height="88" fill="none" stroke="#C9A227" stroke-width="1.5"/>
-          <rect x="30" y="20" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="38" y="20" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="30" y="32" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="38" y="32" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="30" y="44" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="38" y="44" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="30" y="56" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="38" y="56" width="5"  height="6"  fill="#C9A227" opacity="0.5"/>
-          <rect x="30" y="68" width="5"  height="6"  fill="#C9A227" opacity="0.3"/>
-          <rect x="38" y="68" width="5"  height="6"  fill="#C9A227" opacity="0.3"/>
-
-          <rect x="52" y="44" width="16" height="56" fill="none" stroke="#C9A227" stroke-width="1.5"/>
-          <rect x="55" y="50" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="61" y="50" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="55" y="60" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-          <rect x="61" y="60" width="4"  height="5"  fill="#C9A227" opacity="0.4"/>
-
-          <!-- Ground line -->
-          <line x1="0" y1="100" x2="80" y2="100" stroke="#C9A227" stroke-width="1.5" opacity="0.6"/>
-          <!-- Road lines -->
-          <line x1="0" y1="96" x2="80" y2="96" stroke="#C9A227" stroke-width="0.5" opacity="0.3"/>
-          <line x1="0" y1="92" x2="80" y2="92" stroke="#C9A227" stroke-width="0.5" opacity="0.2"/>
-        </svg>
+        <img src="images/logo.svg" alt="" class="hero__art-logo">
       </div>
     </div>
   </section>
@@ -160,13 +131,9 @@
     <div class="container">
 
       <div class="section-header">
-        <span class="eyebrow">
+        <h2 id="services-heading">
           <span class="ar">خدماتنا</span>
           <span class="en">Our Services</span>
-        </span>
-        <h2 id="services-heading">
-          <span class="ar">ما الذي نقدّمه</span>
-          <span class="en">What We Offer</span>
         </h2>
       </div>
 
@@ -225,6 +192,60 @@
           </p>
         </div>
 
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 12h6M9 16h4"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">إدارة العقود</span>
+            <span class="en">Contract Management</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">إعداد العقود ومتابعة تنفيذها وضمان الالتزام بالشروط والمواصفات المتفق عليها.</span>
+            <span class="en">Drafting, monitoring, and enforcing contracts to ensure compliance with agreed terms and specifications.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4l3 3"/>
+              <path d="M2 12h2M20 12h2M12 2v2M12 20v2"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">التنسيق مع الجهات الحكومية</span>
+            <span class="en">Authority Coordination &amp; Approvals</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">التنسيق مع الجهات الحكومية والتنظيمية للحصول على الموافقات اللازمة لتنفيذ المشاريع.</span>
+            <span class="en">Coordinating with government and regulatory authorities to secure all required project approvals.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">الهندسة القيمية</span>
+            <span class="en">Value Engineering</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">تحليل وتحسين تصاميم المشاريع للوصول إلى أفضل توازن بين الجودة والتكلفة والوقت.</span>
+            <span class="en">Analyzing and optimizing project designs to achieve the best balance of quality, cost, and time.</span>
+          </p>
+        </div>
+
       </div>
 
       <div class="section-footer">
@@ -245,20 +266,16 @@
     <div class="container">
 
       <div class="section-header">
-        <span class="eyebrow">
+        <h2 id="projects-heading">
           <span class="ar">مشاريعنا</span>
           <span class="en">Our Projects</span>
-        </span>
-        <h2 id="projects-heading">
-          <span class="ar">أبرز مشاريعنا</span>
-          <span class="en">Featured Projects</span>
         </h2>
       </div>
 
       <div class="projects-preview__grid">
 
         <!-- Abyat Al Khobar — Saudi Arabia -->
-        <a href="projects.html" class="proj-card">
+        <a href="projects.html#saudi-arabia" class="proj-card">
           <img
             src="images/projects/abyat-al-khobar.jpg"
             alt=""
@@ -289,40 +306,8 @@
           </div>
         </a>
 
-        <!-- Heart of Khobar — Saudi Arabia -->
-        <a href="projects.html" class="proj-card">
-          <img
-            src="images/projects/heart-of-khobar.jpg"
-            alt=""
-            width="600"
-            height="400"
-            loading="lazy"
-            class="proj-card__img"
-          >
-          <div class="proj-card__overlay">
-            <img
-              src="images/flags/sa.svg"
-              alt="Saudi Arabia"
-              width="32"
-              height="32"
-              loading="lazy"
-              class="proj-card__flag"
-            >
-            <div class="proj-card__info">
-              <span class="proj-card__name">
-                <span class="ar">مشروع مجمع قلب الخبر</span>
-                <span class="en">The Heart of Khobar Complex</span>
-              </span>
-              <span class="proj-card__country">
-                <span class="ar">المملكة العربية السعودية</span>
-                <span class="en">Saudi Arabia</span>
-              </span>
-            </div>
-          </div>
-        </a>
-
         <!-- Alamein Towers — Egypt -->
-        <a href="projects.html" class="proj-card">
+        <a href="projects.html#egypt" class="proj-card">
           <img
             src="images/projects/alamein-towers.jpg"
             alt=""
@@ -353,6 +338,38 @@
           </div>
         </a>
 
+        <!-- Eco City Agadir — Morocco -->
+        <a href="projects.html#morocco" class="proj-card">
+          <img
+            src="images/projects/eco-city-agadir-1.jpg"
+            alt=""
+            width="600"
+            height="400"
+            loading="lazy"
+            class="proj-card__img"
+          >
+          <div class="proj-card__overlay">
+            <img
+              src="images/flags/ma.svg"
+              alt="Morocco"
+              width="32"
+              height="32"
+              loading="lazy"
+              class="proj-card__flag"
+            >
+            <div class="proj-card__info">
+              <span class="proj-card__name">
+                <span class="ar">إيكو سيتي أكادير</span>
+                <span class="en">Eco City Agadir</span>
+              </span>
+              <span class="proj-card__country">
+                <span class="ar">المغرب</span>
+                <span class="en">Morocco</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
       </div>
 
       <div class="section-footer">
@@ -378,8 +395,8 @@
           <span class="en">About Us</span>
         </span>
         <h2 id="about-heading">
-          <span class="ar">كيان تساوي العربي للتطوير والبنية التحتية</span>
-          <span class="en">Kayan Tasawi Al Arabi Development &amp; Infrastructure</span>
+          <span class="ar">نبني البنية التحتية... ونصنع القيمة العقارية</span>
+          <span class="en">Building Infrastructure... Creating Real Estate Value</span>
         </h2>
         <p class="about-teaser__overview">
           <span class="ar">شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع، تعمل داخل المملكة العربية السعودية. تأسست الشركة اعتماداً على خبرات عملية ممتدة في السوق السعودي منذ عام 2016، خاصة في المنطقة الشرقية، وتشمل أعمال التخطيط وإدارة العقود والإشراف على تنفيذ مشاريع البنية التحتية.</span>
@@ -438,7 +455,7 @@
 
     <div class="footer__top">
       <a href="index.html" class="footer__logo" aria-label="كيان تساوي العربي — الرئيسية">
-        <img src="images/logo.svg" alt="كيان تساوي العربي" width="110" height="87" loading="lazy">
+        <img src="images/logo-mark.svg" alt="كيان تساوي العربي" width="56" height="56" loading="lazy">
       </a>
 
       <nav class="footer__nav" aria-label="روابط التذييل">
