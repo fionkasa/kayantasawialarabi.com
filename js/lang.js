@@ -16,7 +16,8 @@
   function updateToggleLabel(lang) {
     var btn = document.getElementById('lang-toggle');
     if (!btn) return;
-    btn.textContent = lang === 'en' ? 'عربي' : 'EN';
+    var label = lang === 'en' ? 'عربي' : 'EN';
+    btn.innerHTML = '<span class="btn-lang__text">' + label + '</span>';
     btn.setAttribute('aria-label', lang === 'en' ? 'التبديل إلى العربية' : 'Switch to English');
   }
 

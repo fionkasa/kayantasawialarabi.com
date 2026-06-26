@@ -24,7 +24,7 @@
     </a>
 
     <div class="navbar__actions">
-      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
+      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English"><span class="btn-lang__text">EN</span></button>
     </div>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true">
@@ -40,7 +40,7 @@
         <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
         <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
         <li><a href="about.html" aria-current="page"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
-        <li class="navbar__link-cta"><a href="contact.html"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></a></li>
+        <li class="navbar__link-cta"><a href="contact.html"><span class="btn-cta__text ar">تواصل معنا</span><span class="btn-cta__text en">Contact Us</span></a></li>
       </ul>
     </nav>
 
@@ -64,76 +64,80 @@
   </section>
   <!-- ===== END PAGE HEADER ===== -->
 
-  <!-- ===== COMPANY OVERVIEW + PROFESSIONAL BACKGROUND ===== -->
-  <section class="about-section" aria-label="نبذة عن الشركة">
+  <!-- ===== ABOUT CARDS ===== -->
+  <section class="about-cards-section" aria-label="نبذة عن الشركة">
     <div class="container">
 
-      <h2 class="about-heading">
-        <span class="ar">نبذة عن الشركة</span>
-        <span class="en">Company Overview</span>
-      </h2>
+      <div class="about-cards-grid">
 
-      <div class="about-prose">
-        <p class="ar">كيان تساوي العربي للتطوير والبنية التحتية هي شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع، تعمل داخل المملكة العربية السعودية.</p>
-        <p class="ar">تأسست الشركة اعتماداً على خبرات عملية ممتدة في السوق السعودي منذ عام 2016، خاصة في المنطقة الشرقية، وتشمل أعمال التخطيط وإدارة العقود والإشراف على تنفيذ مشاريع البنية التحتية.</p>
-        <p class="en">Kayan Tasawi Al Arabi Development &amp; Infrastructure is a specialized company in infrastructure development, master planning, and project management, operating in the Kingdom of Saudi Arabia.</p>
-        <p class="en">The company is established based on extensive hands-on experience in the Saudi market since 2016, particularly in the Eastern Province, covering planning, contract management, and infrastructure project supervision.</p>
+        <!-- Overview -->
+        <div class="about-card">
+          <h2 class="about-card__heading">
+            <span class="ar">نبذة عن الشركة</span>
+            <span class="en">Company Overview</span>
+          </h2>
+          <div class="about-card__body">
+            <p class="ar">كيان تساوي العربي للتطوير والبنية التحتية هي شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع، تعمل داخل المملكة العربية السعودية.</p>
+            <p class="ar">تأسست الشركة اعتماداً على خبرات عملية ممتدة في السوق السعودي منذ عام 2016، خاصة في المنطقة الشرقية، وتشمل أعمال التخطيط وإدارة العقود والإشراف على تنفيذ مشاريع البنية التحتية.</p>
+            <p class="en">Kayan Tasawi Al Arabi Development &amp; Infrastructure is a specialized company in infrastructure development, master planning, and project management, operating in the Kingdom of Saudi Arabia.</p>
+            <p class="en">The company is established based on extensive hands-on experience in the Saudi market since 2016, particularly in the Eastern Province, covering planning, contract management, and infrastructure project supervision.</p>
+          </div>
+        </div>
+
+        <!-- Professional Background & Experience -->
+        <div class="about-card">
+          <h2 class="about-card__heading">
+            <span class="ar">الخلفية المهنية والخبرات</span>
+            <span class="en">Professional Background &amp; Experience</span>
+          </h2>
+          <div class="about-card__body">
+            <p class="ar">على الرغم من أن الشركة حديثة التأسيس في المملكة، إلا أنها تعتمد على خبرات تراكمية قوية لفريق الإدارة، الذي شارك بشكل مباشر في:</p>
+            <ul class="ar">
+              <li>إدارة والإشراف على أكثر من 19 مشروع تطوير وبنية تحتية</li>
+              <li>إعداد وتطوير المخططات السكنية</li>
+              <li>التنسيق مع المطورين والمقاولين والاستشاريين</li>
+              <li>إدارة العقود ومتابعة التنفيذ</li>
+            </ul>
+            <p class="ar">تم اكتساب هذه الخبرات من خلال أدوار فعلية داخل شركات قائمة في السوق السعودي.</p>
+            <p class="en">Although the company is newly established in the Kingdom, it is built upon strong accumulated professional experience led by its management team. The team has been directly involved in:</p>
+            <ul class="en">
+              <li>Managing and supervising more than 19 development and infrastructure projects</li>
+              <li>Preparing and optimizing residential masterplans</li>
+              <li>Coordinating with developers, consultants, and contractors</li>
+              <li>Managing contracts and execution processes</li>
+            </ul>
+            <p class="en">This experience was gained through active roles within established companies in the Saudi market.</p>
+          </div>
+        </div>
+
+        <!-- Vision -->
+        <div class="about-card">
+          <h2 class="about-card__heading">
+            <span class="ar">الرؤية</span>
+            <span class="en">Vision</span>
+          </h2>
+          <div class="about-card__body">
+            <p class="ar">أن نكون من الشركات الرائدة والموثوقة في قطاع المقاولات والبنية التحتية، من خلال تقديم مشاريع مبتكرة ومستدامة تسهم في بناء مستقبل أفضل للمجتمعات.</p>
+            <p class="en">To be a leading and trusted name in the contracting and infrastructure sector, recognized for delivering innovative and sustainable projects that shape the future of communities.</p>
+          </div>
+        </div>
+
+        <!-- Mission -->
+        <div class="about-card">
+          <h2 class="about-card__heading">
+            <span class="ar">الرسالة</span>
+            <span class="en">Mission</span>
+          </h2>
+          <div class="about-card__body">
+            <p class="ar">تقديم حلول مقاولات متكاملة وموثوقة من خلال التميز في التنفيذ، والالتزام بأعلى معايير الجودة والسلامة، وتطوير كوادرنا واستخدام أحدث التقنيات، بما يحقق قيمة مستدامة لعملائنا وشركائنا.</p>
+            <p class="en">To deliver reliable and integrated contracting solutions through excellence in execution, commitment to the highest standards of quality and safety, and continuous development of our team and technologies, ensuring sustainable value for our clients and partners.</p>
+          </div>
+        </div>
+
       </div>
-
-      <div class="about-prose about-prose--background">
-        <h2 class="about-heading">
-          <span class="ar">الخلفية المهنية والخبرات</span>
-          <span class="en">Professional Background &amp; Experience</span>
-        </h2>
-
-        <p class="ar about-prose__first">على الرغم من أن الشركة حديثة التأسيس في المملكة، إلا أنها تعتمد على خبرات تراكمية قوية لفريق الإدارة، الذي شارك بشكل مباشر في:</p>
-        <ul class="ar">
-          <li>إدارة والإشراف على أكثر من 19 مشروع تطوير وبنية تحتية</li>
-          <li>إعداد وتطوير المخططات السكنية</li>
-          <li>التنسيق مع المطورين والمقاولين والاستشاريين</li>
-          <li>إدارة العقود ومتابعة التنفيذ</li>
-        </ul>
-        <p class="ar">تم اكتساب هذه الخبرات من خلال أدوار فعلية داخل شركات قائمة في السوق السعودي.</p>
-
-        <p class="en about-prose__first">Although the company is newly established in the Kingdom, it is built upon strong accumulated professional experience led by its management team. The team has been directly involved in:</p>
-        <ul class="en">
-          <li>Managing and supervising more than 19 development and infrastructure projects</li>
-          <li>Preparing and optimizing residential masterplans</li>
-          <li>Coordinating with developers, consultants, and contractors</li>
-          <li>Managing contracts and execution processes</li>
-        </ul>
-        <p class="en">This experience was gained through active roles within established companies in the Saudi market.</p>
-      </div>
-
     </div>
   </section>
-  <!-- ===== END COMPANY OVERVIEW ===== -->
-
-  <!-- ===== VISION & MISSION ===== -->
-  <section class="vm-section" aria-label="الرؤية والرسالة">
-    <div class="container">
-
-      <div class="vm-block">
-        <h2 class="vm-block__heading">
-          <span class="ar">الرؤية</span>
-          <span class="en">Vision</span>
-        </h2>
-        <p class="vm-block__text ar">أن نكون من الشركات الرائدة والموثوقة في قطاع المقاولات والبنية التحتية، من خلال تقديم مشاريع مبتكرة ومستدامة تسهم في بناء مستقبل أفضل للمجتمعات.</p>
-        <p class="vm-block__text en">To be a leading and trusted name in the contracting and infrastructure sector, recognized for delivering innovative and sustainable projects that shape the future of communities.</p>
-      </div>
-
-      <div class="vm-block">
-        <h2 class="vm-block__heading">
-          <span class="ar">الرسالة</span>
-          <span class="en">Mission</span>
-        </h2>
-        <p class="vm-block__text ar">تقديم حلول مقاولات متكاملة وموثوقة من خلال التميز في التنفيذ، والالتزام بأعلى معايير الجودة والسلامة، وتطوير كوادرنا واستخدام أحدث التقنيات، بما يحقق قيمة مستدامة لعملائنا وشركائنا.</p>
-        <p class="vm-block__text en">To deliver reliable and integrated contracting solutions through excellence in execution, commitment to the highest standards of quality and safety, and continuous development of our team and technologies, ensuring sustainable value for our clients and partners.</p>
-      </div>
-
-    </div>
-  </section>
-  <!-- ===== END VISION & MISSION ===== -->
+  <!-- ===== END ABOUT CARDS ===== -->
 
   <!-- ===== CORE VALUES ===== -->
   <section class="values-section" aria-label="القيم الأساسية">
@@ -325,7 +329,7 @@
           <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
           <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
           <li><a href="about.html"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
-          <li><a href="contact.html"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></a></li>
+          <li><a href="contact.html"><span class="btn-cta__text ar">تواصل معنا</span><span class="btn-cta__text en">Contact Us</span></a></li>
         </ul>
       </nav>
 
