@@ -20,10 +20,16 @@
     btn.setAttribute('aria-label', lang === 'en' ? 'التبديل إلى العربية' : 'Switch to English');
   }
 
+  function closeNav() {
+    var checkbox = document.getElementById('nav-toggle');
+    if (checkbox) checkbox.checked = false;
+  }
+
   function toggle() {
     var current = html.getAttribute('lang') === 'en' ? 'en' : 'ar';
     var next = current === 'en' ? 'ar' : 'en';
     applyLang(next);
+    closeNav();
     try { localStorage.setItem(STORAGE_KEY, next); } catch (e) {}
   }
 
@@ -34,6 +40,12 @@
 
     var btn = document.getElementById('lang-toggle');
     if (btn) btn.addEventListener('click', toggle);
+
+    /* Close mobile nav when any nav link is tapped */
+    var navLinks = document.querySelectorAll('.navbar__links a');
+    for (var i = 0; i < navLinks.length; i++) {
+      navLinks[i].addEventListener('click', closeNav);
+    }
   }
 
   if (document.readyState === 'loading') {

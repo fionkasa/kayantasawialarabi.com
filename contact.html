@@ -13,9 +13,19 @@
 <header class="navbar" role="banner">
   <div class="container navbar__inner">
 
-    <a href="index.html" class="navbar__logo" aria-label="كيان تساوي العربي — الرئيسية">
-      <img src="images/logo.svg" alt="كيان تساوي العربي" width="127" height="101" loading="eager">
+    <a href="index.html" class="navbar__brand" aria-label="كيان تساوي العربي — الرئيسية">
+      <div class="navbar__brand-logo-wrap">
+        <img src="images/logo-mark.svg" alt="" width="52" height="52" loading="eager" class="navbar__brand-logo">
+      </div>
+      <span class="navbar__brand-name">
+        <span class="ar">كيان تساوي العربي</span>
+        <span class="en">Kayan Tasawi Al Arabi</span>
+      </span>
     </a>
+
+    <div class="navbar__actions">
+      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
+    </div>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true">
     <label for="nav-toggle" class="nav-toggle__btn" aria-label="القائمة">
@@ -30,14 +40,8 @@
         <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
         <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
         <li><a href="about.html"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
+        <li class="navbar__link-cta"><a href="contact.html" aria-current="page"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></a></li>
       </ul>
-      <div class="navbar__actions">
-        <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
-        <a href="contact.html" class="btn-cta" aria-current="page">
-          <span class="ar">تواصل معنا</span>
-          <span class="en">Contact Us</span>
-        </a>
-      </div>
     </nav>
 
   </div>
@@ -56,10 +60,6 @@
         <span class="ar">تواصل معنا</span>
         <span class="en">Contact Us</span>
       </h1>
-      <p class="page-header__sub">
-        <span class="ar">نحن هنا للإجابة على استفساراتك</span>
-        <span class="en">We are here to answer your inquiries</span>
-      </p>
     </div>
   </section>
   <!-- ===== END PAGE HEADER ===== -->
@@ -143,7 +143,7 @@
 
     <div class="footer__top">
       <a href="index.html" class="footer__logo" aria-label="كيان تساوي العربي — الرئيسية">
-        <img src="images/logo.svg" alt="كيان تساوي العربي" width="110" height="87" loading="lazy">
+        <img src="images/logo-mark.svg" alt="كيان تساوي العربي" width="56" height="56" loading="lazy">
       </a>
 
       <nav class="footer__nav" aria-label="روابط التذييل">

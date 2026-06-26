@@ -13,9 +13,19 @@
 <header class="navbar" role="banner">
   <div class="container navbar__inner">
 
-    <a href="index.html" class="navbar__logo" aria-label="كيان تساوي العربي — الرئيسية">
-      <img src="images/logo.svg" alt="كيان تساوي العربي" width="127" height="101" loading="eager">
+    <a href="index.html" class="navbar__brand" aria-label="كيان تساوي العربي — الرئيسية">
+      <div class="navbar__brand-logo-wrap">
+        <img src="images/logo-mark.svg" alt="" width="52" height="52" loading="eager" class="navbar__brand-logo">
+      </div>
+      <span class="navbar__brand-name">
+        <span class="ar">كيان تساوي العربي</span>
+        <span class="en">Kayan Tasawi Al Arabi</span>
+      </span>
     </a>
+
+    <div class="navbar__actions">
+      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
+    </div>
 
     <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true">
     <label for="nav-toggle" class="nav-toggle__btn" aria-label="القائمة">
@@ -30,14 +40,8 @@
         <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
         <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
         <li><a href="about.html" aria-current="page"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
+        <li class="navbar__link-cta"><a href="contact.html"><span class="ar">تواصل معنا</span><span class="en">Contact Us</span></a></li>
       </ul>
-      <div class="navbar__actions">
-        <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English">EN</button>
-        <a href="contact.html" class="btn-cta">
-          <span class="ar">تواصل معنا</span>
-          <span class="en">Contact Us</span>
-        </a>
-      </div>
     </nav>
 
   </div>
@@ -56,10 +60,6 @@
         <span class="ar">من نحن</span>
         <span class="en">About Us</span>
       </h1>
-      <p class="page-header__sub">
-        <span class="ar">خبرة متراكمة في تطوير البنية التحتية منذ 2016</span>
-        <span class="en">Accumulated expertise in infrastructure development since 2016</span>
-      </p>
     </div>
   </section>
   <!-- ===== END PAGE HEADER ===== -->
@@ -68,13 +68,9 @@
   <section class="about-section" aria-label="نبذة عن الشركة">
     <div class="container">
 
-      <span class="about-label">
+      <h2 class="about-heading">
         <span class="ar">نبذة عن الشركة</span>
         <span class="en">Company Overview</span>
-      </span>
-      <h2 class="about-heading">
-        <span class="ar">كيان تساوي العربي للتطوير والبنية التحتية</span>
-        <span class="en">Kayan Tasawi Al Arabi Development &amp; Infrastructure</span>
       </h2>
 
       <div class="about-prose">
@@ -84,13 +80,13 @@
         <p class="en">The company is established based on extensive hands-on experience in the Saudi market since 2016, particularly in the Eastern Province, covering planning, contract management, and infrastructure project supervision.</p>
       </div>
 
-      <div class="about-prose" style="margin-top: var(--space-12);">
-        <span class="about-label">
+      <div class="about-prose about-prose--background">
+        <h2 class="about-heading">
           <span class="ar">الخلفية المهنية والخبرات</span>
           <span class="en">Professional Background &amp; Experience</span>
-        </span>
+        </h2>
 
-        <p class="ar" style="margin-top: var(--space-3);">على الرغم من أن الشركة حديثة التأسيس في المملكة، إلا أنها تعتمد على خبرات تراكمية قوية لفريق الإدارة، الذي شارك بشكل مباشر في:</p>
+        <p class="ar about-prose__first">على الرغم من أن الشركة حديثة التأسيس في المملكة، إلا أنها تعتمد على خبرات تراكمية قوية لفريق الإدارة، الذي شارك بشكل مباشر في:</p>
         <ul class="ar">
           <li>إدارة والإشراف على أكثر من 19 مشروع تطوير وبنية تحتية</li>
           <li>إعداد وتطوير المخططات السكنية</li>
@@ -99,7 +95,7 @@
         </ul>
         <p class="ar">تم اكتساب هذه الخبرات من خلال أدوار فعلية داخل شركات قائمة في السوق السعودي.</p>
 
-        <p class="en" style="margin-top: var(--space-3);">Although the company is newly established in the Kingdom, it is built upon strong accumulated professional experience led by its management team. The team has been directly involved in:</p>
+        <p class="en about-prose__first">Although the company is newly established in the Kingdom, it is built upon strong accumulated professional experience led by its management team. The team has been directly involved in:</p>
         <ul class="en">
           <li>Managing and supervising more than 19 development and infrastructure projects</li>
           <li>Preparing and optimizing residential masterplans</li>
@@ -114,63 +110,51 @@
   <!-- ===== END COMPANY OVERVIEW ===== -->
 
   <!-- ===== VISION & MISSION ===== -->
-  <div class="container">
-    <div class="vision-mission" aria-label="الرؤية والرسالة">
+  <section class="vm-section" aria-label="الرؤية والرسالة">
+    <div class="container">
 
-      <div class="vm-card vm-card--vision">
-        <p class="vm-card__label">
+      <div class="vm-block">
+        <h2 class="vm-block__heading">
           <span class="ar">الرؤية</span>
           <span class="en">Vision</span>
-        </p>
-        <p class="vm-card__text ar">أن نكون من الشركات الرائدة والموثوقة في قطاع المقاولات والبنية التحتية، من خلال تقديم مشاريع مبتكرة ومستدامة تسهم في بناء مستقبل أفضل للمجتمعات.</p>
-        <p class="vm-card__text en">To be a leading and trusted name in the contracting and infrastructure sector, recognized for delivering innovative and sustainable projects that shape the future of communities.</p>
+        </h2>
+        <p class="vm-block__text ar">أن نكون من الشركات الرائدة والموثوقة في قطاع المقاولات والبنية التحتية، من خلال تقديم مشاريع مبتكرة ومستدامة تسهم في بناء مستقبل أفضل للمجتمعات.</p>
+        <p class="vm-block__text en">To be a leading and trusted name in the contracting and infrastructure sector, recognized for delivering innovative and sustainable projects that shape the future of communities.</p>
       </div>
 
-      <div class="vm-card vm-card--mission">
-        <p class="vm-card__label">
+      <div class="vm-block">
+        <h2 class="vm-block__heading">
           <span class="ar">الرسالة</span>
           <span class="en">Mission</span>
-        </p>
-        <p class="vm-card__text ar">تقديم حلول مقاولات متكاملة وموثوقة من خلال التميز في التنفيذ، والالتزام بأعلى معايير الجودة والسلامة، وتطوير كوادرنا واستخدام أحدث التقنيات، بما يحقق قيمة مستدامة لعملائنا وشركائنا.</p>
-        <p class="vm-card__text en">To deliver reliable and integrated contracting solutions through excellence in execution, commitment to the highest standards of quality and safety, and continuous development of our team and technologies, ensuring sustainable value for our clients and partners.</p>
+        </h2>
+        <p class="vm-block__text ar">تقديم حلول مقاولات متكاملة وموثوقة من خلال التميز في التنفيذ، والالتزام بأعلى معايير الجودة والسلامة، وتطوير كوادرنا واستخدام أحدث التقنيات، بما يحقق قيمة مستدامة لعملائنا وشركائنا.</p>
+        <p class="vm-block__text en">To deliver reliable and integrated contracting solutions through excellence in execution, commitment to the highest standards of quality and safety, and continuous development of our team and technologies, ensuring sustainable value for our clients and partners.</p>
       </div>
 
     </div>
-  </div>
+  </section>
   <!-- ===== END VISION & MISSION ===== -->
 
   <!-- ===== CORE VALUES ===== -->
   <section class="values-section" aria-label="القيم الأساسية">
     <div class="container">
 
-      <span class="about-label">
+      <h2 class="about-heading">
         <span class="ar">القيم الأساسية</span>
         <span class="en">Core Values</span>
-      </span>
-      <h2 class="about-heading">
-        <span class="ar">ما الذي يقودنا</span>
-        <span class="en">What Drives Us</span>
       </h2>
 
       <div class="values-grid">
 
-        <!-- Teamwork -->
+        <!-- Safety — card 1: gold background, rightmost in RTL -->
         <div class="value-card">
-          <p class="value-card__name ar">روح الفريق</p>
-          <p class="value-card__name en">Teamwork</p>
-          <p class="value-card__desc ar">نؤمن بأن النجاح يتحقق من خلال التعاون الفعّال بين أفراد الفريق لتحقيق الأهداف المشتركة.</p>
-          <p class="value-card__desc en">We believe success is achieved through effective collaboration among team members to reach common goals.</p>
+          <p class="value-card__name ar">السلامة</p>
+          <p class="value-card__name en">Safety</p>
+          <p class="value-card__desc ar">نضع سلامة الأفراد والمشاريع في مقدمة أولوياتنا، من خلال الالتزام بأعلى معايير وإجراءات السلامة في جميع مواقع العمل.</p>
+          <p class="value-card__desc en">We prioritize the safety of people and projects by adhering to the highest safety standards and procedures across all work sites.</p>
         </div>
 
-        <!-- Excellence -->
-        <div class="value-card">
-          <p class="value-card__name ar">التميز</p>
-          <p class="value-card__name en">Excellence</p>
-          <p class="value-card__desc ar">نسعى دائماً لتحقيق أعلى مستويات الجودة في كل ما نقوم به، مع التركيز على التطوير المستمر والابتكار.</p>
-          <p class="value-card__desc en">We constantly strive for the highest levels of quality in everything we do, focusing on continuous improvement and innovation.</p>
-        </div>
-
-        <!-- Integrity -->
+        <!-- Integrity — card 2 -->
         <div class="value-card">
           <p class="value-card__name ar">النزاهة</p>
           <p class="value-card__name en">Integrity</p>
@@ -178,12 +162,20 @@
           <p class="value-card__desc en">We are committed to transparency and honesty in all our dealings, building long-term relationships based on trust and respect.</p>
         </div>
 
-        <!-- Safety -->
+        <!-- Excellence — card 3 -->
         <div class="value-card">
-          <p class="value-card__name ar">السلامة</p>
-          <p class="value-card__name en">Safety</p>
-          <p class="value-card__desc ar">نضع سلامة الأفراد والمشاريع في مقدمة أولوياتنا، من خلال الالتزام بأعلى معايير وإجراءات السلامة في جميع مواقع العمل.</p>
-          <p class="value-card__desc en">We prioritize the safety of people and projects by adhering to the highest safety standards and procedures across all work sites.</p>
+          <p class="value-card__name ar">التميز</p>
+          <p class="value-card__name en">Excellence</p>
+          <p class="value-card__desc ar">نسعى دائماً لتحقيق أعلى مستويات الجودة في كل ما نقوم به، مع التركيز على التطوير المستمر والابتكار.</p>
+          <p class="value-card__desc en">We constantly strive for the highest levels of quality in everything we do, focusing on continuous improvement and innovation.</p>
+        </div>
+
+        <!-- Teamwork — card 4: leftmost in RTL -->
+        <div class="value-card">
+          <p class="value-card__name ar">روح الفريق</p>
+          <p class="value-card__name en">Teamwork</p>
+          <p class="value-card__desc ar">نؤمن بأن النجاح يتحقق من خلال التعاون الفعّال بين أفراد الفريق لتحقيق الأهداف المشتركة.</p>
+          <p class="value-card__desc en">We believe success is achieved through effective collaboration among team members to reach common goals.</p>
         </div>
 
       </div>
@@ -195,13 +187,9 @@
   <section class="strengths-section" aria-label="نقاط القوة">
     <div class="container">
 
-      <span class="about-label">
+      <h2 class="about-heading">
         <span class="ar">نقاط القوة الرئيسية</span>
         <span class="en">Key Strengths</span>
-      </span>
-      <h2 class="about-heading">
-        <span class="ar">ما يميّزنا</span>
-        <span class="en">What Sets Us Apart</span>
       </h2>
 
       <div class="strengths-grid">
@@ -219,7 +207,7 @@
         </ul>
       </div>
 
-      <div class="compliance-note" style="margin-top: var(--space-10);">
+      <div class="compliance-note">
         <p class="ar">تلتزم الشركة بكافة الأنظمة والاشتراطات المعمول بها في المملكة العربية السعودية، وتسعى للمساهمة في تنفيذ مشاريع البنية التحتية وفق أعلى المعايير الفنية والتنظيمية.</p>
         <p class="en">The company operates in full compliance with Saudi regulations and aims to contribute to infrastructure and development projects in alignment with national standards and authority requirements.</p>
       </div>
@@ -231,13 +219,9 @@
   <section class="regional-section" aria-label="الأسواق الإقليمية">
     <div class="container">
 
-      <span class="about-label">
+      <h2 class="about-heading">
         <span class="ar">الأسواق الإقليمية</span>
         <span class="en">Regional Markets</span>
-      </span>
-      <h2 class="about-heading">
-        <span class="ar">حضورنا الإقليمي</span>
-        <span class="en">Our Regional Presence</span>
       </h2>
 
       <div class="regional-grid">
@@ -332,7 +316,7 @@
 
     <div class="footer__top">
       <a href="index.html" class="footer__logo" aria-label="كيان تساوي العربي — الرئيسية">
-        <img src="images/logo.svg" alt="كيان تساوي العربي" width="110" height="87" loading="lazy">
+        <img src="images/logo-mark.svg" alt="كيان تساوي العربي" width="56" height="56" loading="lazy">
       </a>
 
       <nav class="footer__nav" aria-label="روابط التذييل">
