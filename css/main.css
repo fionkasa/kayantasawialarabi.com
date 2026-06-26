@@ -868,3 +868,84 @@ h1, h2, h3, h4, h5, h6 {
     flex-direction: column;
   }
 }
+
+
+/* ===== STATS BAR ===== */
+
+.stats {
+  background: var(--navy-deep);
+}
+
+.stats__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.stats__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: var(--space-6) var(--space-4);
+  position: relative;
+}
+
+/* Dividers between items — on the reading-end side */
+.stats__item + .stats__item::before {
+  content: "";
+  position: absolute;
+  top: 25%;
+  height: 50%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[dir="rtl"] .stats__item + .stats__item::before { right: 0; left: auto; }
+[dir="ltr"] .stats__item + .stats__item::before { left: 0;  right: auto; }
+
+.stats__number {
+  display: block;
+  font-size: var(--text-3xl);
+  font-weight: 700;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: var(--space-2);
+  font-variant-numeric: tabular-nums;
+}
+
+.stats__label {
+  display: block;
+  font-size: var(--text-sm);
+  color: #8b97ad;
+  font-weight: 400;
+}
+
+/* ===== STATS RESPONSIVE ===== */
+
+@media (max-width: 767px) {
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  /* Remove divider from first item in each row */
+  .stats__item:nth-child(3)::before {
+    display: none;
+  }
+
+  /* Add a top border to the bottom row */
+  .stats__item:nth-child(3),
+  .stats__item:nth-child(4) {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+}
+
+@media (max-width: 400px) {
+  .stats__number {
+    font-size: var(--text-2xl);
+  }
+
+  .stats__item {
+    padding: var(--space-5) var(--space-3);
+  }
+}
