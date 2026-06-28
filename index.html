@@ -1,11 +1,513 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello</title>
+  <title>كيان تساوي العربي للمقاولات والبنية التحتية</title>
+  <meta name="description" content="كيان تساوي العربي — شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع في المملكة العربية السعودية">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="كيان تساوي العربي">
+  <meta property="og:url" content="https://kayantasawialarabi.com/">
+  <meta property="og:title" content="كيان تساوي العربي للمقاولات والبنية التحتية">
+  <meta property="og:description" content="كيان تساوي العربي — شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع في المملكة العربية السعودية">
+  <meta property="og:image" content="https://kayantasawialarabi.com/images/logo.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="ar_SA">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="كيان تساوي العربي للمقاولات والبنية التحتية">
+  <meta name="twitter:description" content="كيان تساوي العربي — شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع في المملكة العربية السعودية">
+  <meta name="twitter:image" content="https://kayantasawialarabi.com/images/logo.png">
+  <link rel="icon" href="favicon/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="favicon/apple-touch-icon.png">
+  <link rel="icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="css/main.css">
+  <script>(function(){try{var l=localStorage.getItem('kta-lang');if(l==='en'){document.documentElement.setAttribute('lang','en');document.documentElement.setAttribute('dir','ltr');}}catch(e){}}());</script>
 </head>
 <body>
-  <h1>Hello, world!</h1>
+
+<!-- ===== NAVBAR ===== -->
+<header class="navbar" role="banner">
+  <div class="container navbar__inner">
+
+    <a href="index.html" class="navbar__brand" aria-label="كيان تساوي العربي — الرئيسية">
+      <div class="navbar__brand-logo-wrap">
+        <img src="images/logo-mark.svg" alt="" width="52" height="52" loading="eager" class="navbar__brand-logo">
+      </div>
+      <span class="navbar__brand-name">
+        <span class="ar">كيان تساوي العربي</span>
+        <span class="en">Kayan Tasawi Al Arabi</span>
+      </span>
+    </a>
+
+    <div class="navbar__actions">
+      <button id="lang-toggle" class="btn-lang" type="button" aria-label="Switch to English"><span class="btn-lang__text">EN</span></button>
+    </div>
+
+    <input type="checkbox" id="nav-toggle" class="nav-toggle__input" aria-hidden="true">
+    <label for="nav-toggle" class="nav-toggle__btn" aria-label="القائمة">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
+
+    <nav class="navbar__nav" aria-label="القائمة الرئيسية">
+      <ul class="navbar__links">
+        <li><a href="index.html" aria-current="page"><span class="ar">الرئيسية</span><span class="en">Home</span></a></li>
+        <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
+        <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
+        <li><a href="about.html"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
+        <li class="navbar__link-cta"><a href="contact.html"><span class="btn-cta__text ar">تواصل معنا</span><span class="btn-cta__text en">Contact Us</span></a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+<!-- ===== END NAVBAR ===== -->
+
+
+<!-- ===== PAGE CONTENT ===== -->
+<main id="main">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="مقدمة الشركة">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <span class="hero__tag">
+          <span class="ar">نبني البنية التحتية ونصنع القيمة العقارية</span>
+          <span class="en">Building Infrastructure... Creating Real Estate Value</span>
+        </span>
+        <h1 class="hero__headline">
+          <span class="ar">التميّز في المقاولات والبنية التحتية</span>
+          <span class="en">Excellence in Contracting &amp; Infrastructure</span>
+        </h1>
+        <p class="hero__sub">
+          <span class="ar">شركة سعودية متخصصة منذ 2016 في تطوير البنية التحتية وإدارة المشاريع، بطموح رؤية 2030.</span>
+          <span class="en">A Saudi company specialized since 2016 in infrastructure development and project management, aligned with Vision 2030.</span>
+        </p>
+        <div class="hero__btns">
+          <a href="projects.html" class="hero__btn hero__btn--primary">
+            <span class="ar">عرض المشاريع</span>
+            <span class="en">View Projects</span>
+          </a>
+          <a href="contact.html" class="hero__btn hero__btn--secondary">
+            <span class="ar">اطلب عرض سعر</span>
+            <span class="en">Request a Quote</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero__art" aria-hidden="true">
+        <img src="images/logo.svg" alt="" width="224" height="178" loading="eager" class="hero__art-logo">
+      </div>
+    </div>
+  </section>
+  <!-- ===== END HERO ===== -->
+
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats" aria-label="أبرز الأرقام">
+    <div class="container stats__grid">
+
+      <div class="stats__item">
+        <span class="stats__number">+19</span>
+        <span class="stats__label">
+          <span class="ar">مشروع</span>
+          <span class="en">Projects</span>
+        </span>
+      </div>
+
+      <div class="stats__item">
+        <span class="stats__number">2016</span>
+        <span class="stats__label">
+          <span class="ar">التأسيس</span>
+          <span class="en">Founded</span>
+        </span>
+      </div>
+
+      <div class="stats__item">
+        <span class="stats__number">3</span>
+        <span class="stats__label">
+          <span class="ar">دول</span>
+          <span class="en">Countries</span>
+        </span>
+      </div>
+
+      <div class="stats__item">
+        <span class="stats__number">6</span>
+        <span class="stats__label">
+          <span class="ar">خدمات</span>
+          <span class="en">Services</span>
+        </span>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== END STATS BAR ===== -->
+
+  <!-- ===== SERVICES PREVIEW ===== -->
+  <section class="section services-preview" aria-labelledby="services-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 id="services-heading">
+          <span class="ar">خدماتنا</span>
+          <span class="en">Our Services</span>
+        </h2>
+      </div>
+
+      <div class="services-preview__grid">
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 19l4-14M20 19l-4-14M12 5v14"/>
+              <path d="M4 19h16"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">تطوير البنية التحتية</span>
+            <span class="en">Infrastructure Development</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">تخطيط وتنفيذ مشاريع البنية التحتية من طرق وشبكات مياه وصرف صحي.</span>
+            <span class="en">Planning and delivering infrastructure projects including roads, water networks, and drainage.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 4l6 2 6-2v14l-6 2-6-2-6 2V6l6-2z"/>
+              <path d="M9 4v14"/>
+              <path d="M15 6v14"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">إعداد المخططات العمرانية</span>
+            <span class="en">Master Planning &amp; Land Subdivision</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">إعداد وتطوير المخططات السكنية والتقسيمات العمرانية وفق أعلى المعايير.</span>
+            <span class="en">Developing residential masterplans and land subdivisions to the highest technical standards.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 21h18"/>
+              <path d="M6 21V8l6-4 6 4v13"/>
+              <path d="M10 21v-5h4v5"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">إدارة المشاريع</span>
+            <span class="en">Project Management</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">إدارة العقود والإشراف على التنفيذ والتنسيق مع جميع أطراف المشروع.</span>
+            <span class="en">Contract management, execution oversight, and coordination across all project stakeholders.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/>
+              <rect x="9" y="3" width="6" height="4" rx="1"/>
+              <path d="M9 12h6M9 16h4"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">إدارة العقود</span>
+            <span class="en">Contract Management</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">إعداد العقود ومتابعة تنفيذها وضمان الالتزام بالشروط والمواصفات المتفق عليها.</span>
+            <span class="en">Drafting, monitoring, and enforcing contracts to ensure compliance with agreed terms and specifications.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 8v4l3 3"/>
+              <path d="M2 12h2M20 12h2M12 2v2M12 20v2"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">التنسيق مع الجهات الحكومية</span>
+            <span class="en">Authority Coordination &amp; Approvals</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">التنسيق مع الجهات الحكومية والتنظيمية للحصول على الموافقات اللازمة لتنفيذ المشاريع.</span>
+            <span class="en">Coordinating with government and regulatory authorities to secure all required project approvals.</span>
+          </p>
+        </div>
+
+        <div class="svc-card">
+          <div class="svc-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+              <path d="M2 17l10 5 10-5"/>
+              <path d="M2 12l10 5 10-5"/>
+            </svg>
+          </div>
+          <h3 class="svc-card__name">
+            <span class="ar">الهندسة القيمية</span>
+            <span class="en">Value Engineering</span>
+          </h3>
+          <p class="svc-card__desc">
+            <span class="ar">تحليل وتحسين تصاميم المشاريع للوصول إلى أفضل توازن بين الجودة والتكلفة والوقت.</span>
+            <span class="en">Analyzing and optimizing project designs to achieve the best balance of quality, cost, and time.</span>
+          </p>
+        </div>
+
+      </div>
+
+      <div class="section-footer">
+        <a href="services.html" class="link-more">
+          <span class="ar">عرض جميع الخدمات</span>
+          <span class="en">View All Services</span>
+          <span class="link-more__arrow ar" aria-hidden="true">←</span>
+          <span class="link-more__arrow en" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== END SERVICES PREVIEW ===== -->
+
+  <!-- ===== PROJECTS PREVIEW ===== -->
+  <section class="section projects-preview" aria-labelledby="projects-heading">
+    <div class="container">
+
+      <div class="section-header">
+        <h2 id="projects-heading">
+          <span class="ar">مشاريعنا</span>
+          <span class="en">Our Projects</span>
+        </h2>
+      </div>
+
+      <div class="projects-preview__grid">
+
+        <!-- Abyat Al Khobar — Saudi Arabia -->
+        <a href="projects.html#saudi-arabia" class="proj-card">
+          <img
+            src="images/projects/abyat-al-khobar.jpg"
+            alt=""
+            width="600"
+            height="400"
+            loading="lazy"
+            class="proj-card__img"
+          >
+          <div class="proj-card__overlay">
+            <img
+              src="images/flags/sa.svg"
+              alt="Saudi Arabia"
+              width="32"
+              height="32"
+              loading="lazy"
+              class="proj-card__flag"
+            >
+            <div class="proj-card__info">
+              <span class="proj-card__name">
+                <span class="ar">أبيات الخبر</span>
+                <span class="en">Abyat Al Khobar</span>
+              </span>
+              <span class="proj-card__country">
+                <span class="ar">المملكة العربية السعودية</span>
+                <span class="en">Saudi Arabia</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Alamein Towers — Egypt -->
+        <a href="projects.html#egypt" class="proj-card">
+          <img
+            src="images/projects/alamein-towers.jpg"
+            alt=""
+            width="600"
+            height="400"
+            loading="lazy"
+            class="proj-card__img"
+          >
+          <div class="proj-card__overlay">
+            <img
+              src="images/flags/eg.svg"
+              alt="Egypt"
+              width="32"
+              height="32"
+              loading="lazy"
+              class="proj-card__flag"
+            >
+            <div class="proj-card__info">
+              <span class="proj-card__name">
+                <span class="ar">أبراج العالمين</span>
+                <span class="en">Alamein Towers</span>
+              </span>
+              <span class="proj-card__country">
+                <span class="ar">مصر</span>
+                <span class="en">Egypt</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+        <!-- Eco City Agadir — Morocco -->
+        <a href="projects.html#morocco" class="proj-card">
+          <img
+            src="images/projects/eco-city-agadir-1.jpg"
+            alt=""
+            width="600"
+            height="400"
+            loading="lazy"
+            class="proj-card__img"
+          >
+          <div class="proj-card__overlay">
+            <img
+              src="images/flags/ma.svg"
+              alt="Morocco"
+              width="32"
+              height="32"
+              loading="lazy"
+              class="proj-card__flag"
+            >
+            <div class="proj-card__info">
+              <span class="proj-card__name">
+                <span class="ar">إيكو سيتي أكادير</span>
+                <span class="en">Eco City Agadir</span>
+              </span>
+              <span class="proj-card__country">
+                <span class="ar">المغرب</span>
+                <span class="en">Morocco</span>
+              </span>
+            </div>
+          </div>
+        </a>
+
+      </div>
+
+      <div class="section-footer">
+        <a href="projects.html" class="link-more">
+          <span class="ar">عرض جميع المشاريع</span>
+          <span class="en">View All Projects</span>
+          <span class="link-more__arrow ar" aria-hidden="true">←</span>
+          <span class="link-more__arrow en" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== END PROJECTS PREVIEW ===== -->
+
+  <!-- ===== ABOUT TEASER ===== -->
+  <section class="section about-teaser" aria-labelledby="about-heading">
+    <div class="container about-teaser__inner">
+
+      <div class="about-teaser__body">
+        <span class="eyebrow">
+          <span class="ar">من نحن</span>
+          <span class="en">About Us</span>
+        </span>
+        <h2 id="about-heading">
+          <span class="ar">نبني البنية التحتية... ونصنع القيمة العقارية</span>
+          <span class="en">Building Infrastructure... Creating Real Estate Value</span>
+        </h2>
+        <p class="about-teaser__overview">
+          <span class="ar">شركة متخصصة في تطوير البنية التحتية وإعداد المخططات العمرانية وإدارة المشاريع، تعمل داخل المملكة العربية السعودية. تأسست الشركة اعتماداً على خبرات عملية ممتدة في السوق السعودي منذ عام 2016، خاصة في المنطقة الشرقية، وتشمل أعمال التخطيط وإدارة العقود والإشراف على تنفيذ مشاريع البنية التحتية.</span>
+          <span class="en">A specialized company in infrastructure development, master planning, and project management, operating in the Kingdom of Saudi Arabia. The company is established based on extensive hands-on experience in the Saudi market since 2016, particularly in the Eastern Province, covering planning, contract management, and infrastructure project supervision.</span>
+        </p>
+        <div class="about-teaser__vision">
+          <span class="about-teaser__vision-label">
+            <span class="ar">رؤيتنا</span>
+            <span class="en">Our Vision</span>
+          </span>
+          <p>
+            <span class="ar">أن نكون من الشركات الرائدة والموثوقة في قطاع المقاولات والبنية التحتية، من خلال تقديم مشاريع مبتكرة ومستدامة تسهم في بناء مستقبل أفضل للمجتمعات.</span>
+            <span class="en">To be a leading and trusted name in the contracting and infrastructure sector, recognized for delivering innovative and sustainable projects that shape the future of communities.</span>
+          </p>
+        </div>
+        <a href="about.html" class="link-more about-teaser__link">
+          <span class="ar">اقرأ المزيد</span>
+          <span class="en">Learn More</span>
+          <span class="link-more__arrow ar" aria-hidden="true">←</span>
+          <span class="link-more__arrow en" aria-hidden="true">→</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- ===== END ABOUT TEASER ===== -->
+
+  <!-- ===== CTA BAND ===== -->
+  <section class="cta-band" aria-label="دعوة للتواصل">
+    <div class="container cta-band__inner">
+      <div class="cta-band__text">
+        <h2 class="cta-band__heading">
+          <span class="ar">جاهز لبدء مشروعك؟</span>
+          <span class="en">Ready to start your project?</span>
+        </h2>
+        <p class="cta-band__sub">
+          <span class="ar">تحدّث مع فريقنا حول مشروعك القادم.</span>
+          <span class="en">Talk to our team about your next project.</span>
+        </p>
+      </div>
+      <a href="contact.html" class="cta-band__btn">
+        <span class="ar">تواصل معنا</span>
+        <span class="en">Contact Us</span>
+      </a>
+    </div>
+  </section>
+  <!-- ===== END CTA BAND ===== -->
+
+</main>
+<!-- ===== END PAGE CONTENT ===== -->
+
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer" role="contentinfo">
+  <div class="container footer__inner">
+
+    <div class="footer__top">
+      <a href="index.html" class="footer__logo" aria-label="كيان تساوي العربي — الرئيسية">
+        <img src="images/logo-mark.svg" alt="كيان تساوي العربي" width="56" height="56" loading="lazy">
+      </a>
+
+      <nav class="footer__nav" aria-label="روابط التذييل">
+        <ul>
+          <li><a href="index.html"><span class="ar">الرئيسية</span><span class="en">Home</span></a></li>
+          <li><a href="projects.html"><span class="ar">مشاريعنا</span><span class="en">Our Projects</span></a></li>
+          <li><a href="services.html"><span class="ar">خدماتنا</span><span class="en">Our Services</span></a></li>
+          <li><a href="about.html"><span class="ar">من نحن</span><span class="en">About Us</span></a></li>
+          <li><a href="contact.html"><span class="btn-cta__text ar">تواصل معنا</span><span class="btn-cta__text en">Contact Us</span></a></li>
+        </ul>
+      </nav>
+
+      <address class="footer__contact">
+        <p>
+          <span class="ar">الدمام، المنطقة الشرقية، المملكة العربية السعودية</span>
+          <span class="en">Dammam, Eastern Province, Kingdom of Saudi Arabia</span>
+        </p>
+        <p><a href="tel:+966545171445" dir="ltr">+966 54 517 1445</a></p>
+        <p><a href="mailto:info@tasawi.sa" dir="ltr">info@tasawi.sa</a></p>
+      </address>
+    </div>
+
+    <div class="footer__bottom">
+      <p>
+        <span class="ar">© 2026 كيان تساوي العربي. جميع الحقوق محفوظة.</span>
+        <span class="en">© 2026 Kayan Tasawi Al Arabi. All rights reserved.</span>
+      </p>
+    </div>
+
+  </div>
+</footer>
+<!-- ===== END FOOTER ===== -->
+
+<script src="js/lang.js"></script>
 </body>
 </html>
