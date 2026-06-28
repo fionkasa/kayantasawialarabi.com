@@ -85,15 +85,16 @@
 
 :root {
   /* Colors */
-  --navy:      #14233F;
-  --navy-deep: #0f1b30;
-  --gold:      #C9A227;
-  --gold-soft: #E5C457;
-  --ink:       #1f2430;
-  --muted:     #5f6573;
-  --line:      #e4e6ec;
-  --paper:     #ffffff;
-  --bg:        #f4f5f8;
+  --navy:         #14233F;
+  --navy-deep:    #0f1b30;
+  --gold:         #C9A227;
+  --gold-soft:    #E5C457;
+  --gold-on-light: #8a6d00; /* gold darkened for text on light backgrounds — passes WCAG AA */
+  --ink:          #1f2430;
+  --muted:        #5f6573;
+  --line:         #e4e6ec;
+  --paper:        #ffffff;
+  --bg:           #f4f5f8;
 
   /* Spacing scale */
   --space-1:  4px;
@@ -199,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--gold);
+  color: var(--gold-on-light);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: var(--space-2);
@@ -1006,7 +1007,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: var(--space-2);
   font-size: var(--text-sm);
   font-weight: 700;
-  color: var(--gold);
+  color: var(--gold-on-light);
   transition: color var(--ease), gap var(--ease);
 }
 
@@ -1254,7 +1255,7 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--gold);
+  color: var(--gold-on-light);
   letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: var(--space-2);
@@ -2246,7 +2247,7 @@ h1, h2, h3, h4, h5, h6 {
 .contact-card__label {
   font-size: var(--text-xs);
   font-weight: 700;
-  color: var(--gold);
+  color: var(--gold-on-light);
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
@@ -2262,7 +2263,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 a.contact-card__value:hover {
-  color: var(--gold);
+  color: var(--gold-on-light);
 }
 
 /* CTA strip below contact cards */
