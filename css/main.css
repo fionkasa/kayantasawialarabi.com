@@ -690,7 +690,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .footer__bottom p {
   font-size: var(--text-xs);
-  color: #5f6d85;
+  color: #8b97ad;
   text-align: center;
 }
 
@@ -1937,7 +1937,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .value-card:nth-child(1) .value-card__desc { color: #9aa6bd; }
 .value-card:nth-child(2) .value-card__desc { color: #8b97ad; }
-.value-card:nth-child(3) .value-card__desc { color: rgba(20,35,63,0.75); }
+.value-card:nth-child(3) .value-card__desc { color: var(--navy); }
 .value-card:nth-child(4) .value-card__desc { color: rgba(20,35,63,0.7); }
 
 /* Key strengths */
