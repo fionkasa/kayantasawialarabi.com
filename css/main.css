@@ -1941,59 +1941,19 @@ h1, h2, h3, h4, h5, h6 {
 .value-card:nth-child(3) .value-card__desc { color: var(--navy); }
 .value-card:nth-child(4) .value-card__desc { color: rgba(20,35,63,0.7); }
 
-/* Key strengths */
-.strengths-section {
-  padding: var(--space-9) 0;
-}
-
-.strengths-grid {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: var(--space-8);
-  margin-top: var(--space-7);
-}
-
-.strengths-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.strengths-list li {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--space-4);
-  padding: var(--space-4) 0;
-  border-bottom: 1px solid var(--line);
-  font-size: var(--text-base);
-  color: var(--muted);
-  line-height: 1.75;
-}
-
-.strengths-list li:last-child {
-  border-bottom: none;
-}
-
-.strengths-list li::before {
-  content: "";
-  flex-shrink: 0;
-  width: 10px;
-  height: 10px;
-  margin-top: 7px;
-  background: var(--gold);
-  border-radius: 2px;
-}
 
 /* Compliance note */
+.compliance-section {
+  padding: var(--space-7) 0;
+}
+
 .compliance-note {
-  margin-top: var(--space-7);
   padding: var(--space-5) var(--space-6);
   background: var(--paper);
   border: 1px solid var(--line);
   border-radius: 6px;
+  border-inline-start: 4px solid var(--navy);
 }
-
-.compliance-note { border-inline-start: 4px solid var(--navy); }
 
 .compliance-note p {
   font-size: var(--text-base);
@@ -2163,15 +2123,6 @@ h1, h2, h3, h4, h5, h6 {
 
   .value-card__desc {
     font-size: var(--text-sm);
-  }
-
-  .strengths-section {
-    padding: var(--space-7) 0;
-  }
-
-  .strengths-grid {
-    gap: var(--space-5);
-    margin-top: var(--space-5);
   }
 
   .regional-section {
